@@ -1,0 +1,71 @@
+Title: Arqan Tartys Game Documentation
+
+Description:
+This is a simple 2-player game implemented using Pygame library in Python. The game involves two players competing against each other or against the computer. The objective of the game is to reach the opponent's side while managing the strength of the player's move.
+
+Dependencies:
+- Python 3.x
+- Pygame library
+
+Files:
+- mn.png: Menu background image.
+- dala.png: Game background image.
+- go.png: Play button image.
+- 1p.png: Image for 1 player.
+- 2p.png: Image for 2 players.
+- arqan.png: Image for the game character.
+- win.mp3: Sound file for victory.
+- loss.mp3: Sound file for loss.
+- mus.mp3: Background music file.
+
+Functions:
+1. main_menu():
+    - Displays the main menu of the game.
+    - Allows the player to choose between 1-player and 2-player modes.
+    - Invokes the choose() function after a mode is selected.
+
+2. choose():
+    - Displays the mode selection screen.
+    - Allows the player to choose between 1-player and 2-player modes.
+    - Invokes the count_down() function after a mode is selected.
+
+3. count_down(n):
+    - Displays a countdown before the game starts.
+    - Takes an argument 'n' indicating whether it's a 1-player or 2-player game.
+    - Invokes the game_loop() function after the countdown.
+
+4. game_loop(n):
+    - Manages the game loop.
+    - Controls the movement of the game character based on player inputs.
+    - Handles collisions and determines game outcomes.
+    - Displays game status, such as current score and remaining strength.
+    - Plays background music and victory/loss sounds.
+    - Stops the game loop when the game is over.
+
+Variables:
+- SCREEN_WIDTH: Width of the game screen.
+- SCREEN_HEIGHT: Height of the game screen.
+- WHITE: RGB color code for white.
+- BLACK: RGB color code for black.
+- screen: Pygame display surface object.
+- menu_background: Menu background image.
+- game_background: Game background image.
+- play_button: Play button image.
+- p: Image for 1 player.
+- pp: Image for 2 players.
+- arqan: Image for the game character.
+- victory: Sound file for victory.
+- loss: Sound file for loss.
+- music: Background music file.
+
+Controls:
+- Z: Controls the strength of the player's move.
+- L: Controls the strength of the opponent's move (only in 2-player mode).
+- Space: Restarts the game after it's over.
+
+Execution:
+- The game starts by invoking the main_menu() function.
+- After choosing the game mode, the player interacts using the keyboard to control game characters.
+- The game ends when one of the players reaches the opponent's side or goes out of bounds.
+- Players can restart the game by pressing the spacebar after the game ends.
+
