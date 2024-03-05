@@ -7,7 +7,7 @@ This is a simple 2-player game implemented in Python using the Pygame library. T
 Clone the repository:
 
 ```git
-git clone <repository-url>
+git clone https://github.com/zef1rst/arqantartys.git
 ```
 
 Install the required dependencies. Ensure you have Python and Pygame installed:
